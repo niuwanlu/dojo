@@ -5,6 +5,10 @@
 
 @import "compass/reset";
 
+body {
+  font-family: "Open Sans";
+}
+
 .background {
   position: absolute;
   background-color: #38393a;
@@ -31,13 +35,16 @@
       font-size: 28px;
       margin-bottom: 16px;
     }
+    p {
+      color: #A0A0A1;
+    }
   }
 
   .search-group {
     .search-box {
       border-bottom: solid 1px #f3f4f5;
       display: inline-block;
-      width: 400px;
+      width: 450px;
     }
 
     img {
@@ -46,6 +53,8 @@
   }
 
   .person {
+    overflow: hidden;
+
     img {
       height: 80px;
       float: left;

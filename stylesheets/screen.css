@@ -68,6 +68,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 8, ../sass/screen.scss */
+body {
+  font-family: "Open Sans";
+}
+
+/* line 12, ../sass/screen.scss */
 .background {
   position: absolute;
   background-color: #38393a;
@@ -75,7 +80,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 100%;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 .modal {
   position: absolute;
   left: 0;
@@ -89,78 +94,86 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #feffff;
   padding: 50px 40px 30px 40px;
 }
-/* line 28, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 .modal .title {
   text-align: center;
 }
-/* line 30, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .modal .title h2 {
   font-size: 28px;
   margin-bottom: 16px;
 }
-/* line 37, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
+.modal .title p {
+  color: #A0A0A1;
+}
+/* line 44, ../sass/screen.scss */
 .modal .search-group .search-box {
   border-bottom: solid 1px #f3f4f5;
   display: inline-block;
-  width: 400px;
+  width: 450px;
 }
-/* line 43, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .modal .search-group img {
   height: 30px;
 }
-/* line 49, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
+.modal .person {
+  overflow: hidden;
+}
+/* line 58, ../sass/screen.scss */
 .modal .person img {
   height: 80px;
   float: left;
 }
-/* line 53, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .modal .person .introduction {
   text-align: left;
   display: inline-block;
   padding-top: 10px;
   padding-left: 24px;
 }
-/* line 59, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .modal .person .introduction p {
   line-height: 20px;
 }
-/* line 62, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .modal .person .introduction .name {
   color: #83B64E;
   font-weight: 600;
   font-size: 18px;
 }
-/* line 67, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .modal .person .introduction .skill {
   color: #CDCECF;
   font-size: 14px;
 }
-/* line 72, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .modal .person .introduction .contact p {
   display: inline;
 }
-/* line 75, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .modal .person .introduction .contact .location {
   color: #A7A8A9;
   padding-right: 16px;
 }
-/* line 79, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .modal .person .introduction .contact .web {
   color: #383839;
 }
-/* line 85, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .modal .person .checkbox_wrapper {
   float: right;
   margin-top: 30px;
   position: relative;
 }
-/* line 91, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .modal .person input[type="checkbox"] {
   opacity: 0;
   height: 24px;
   width: 24px;
 }
-/* line 97, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .modal .person input[type="checkbox"] + label {
   background: url("../img/Dribbble-Icon-small.png") no-repeat;
   height: 24px;
@@ -172,7 +185,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 0;
   z-index: 2;
 }
-/* line 110, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .modal input[type=text] {
   width: 100%;
   height: 40px;
@@ -183,12 +196,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 14px;
   color: #A0A0A1;
 }
-/* line 121, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .modal ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #A0A0A1;
 }
-/* line 125, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .modal input[type=button] {
   width: 100%;
   background-color: #E6508A;
