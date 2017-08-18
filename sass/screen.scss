@@ -24,7 +24,7 @@ body {
   bottom: 0;
   margin: auto;
   width: 500px;
-  height: 500px;
+  height: 640px;
   z-index: 1;
   background-color: #feffff;
   padding: 50px 40px 30px 40px;
@@ -41,19 +41,32 @@ body {
   }
 
   .search-group {
+    margin: 50px 0;
+
     .search-box {
-      border-bottom: solid 1px #f3f4f5;
       display: inline-block;
       width: 450px;
+      border: none;
+      border-bottom: solid 1px #E7E8E8;
+      margin: 0;
+      padding: 0;
+      height: 16px;
+      outline: none;
+      &:focus {
+        height: 30px;
+      }
     }
 
     img {
       height: 30px;
+      position: absolute;
+      padding-left: 16px;
     }
   }
 
   .person {
     overflow: hidden;
+    margin-bottom: 20px;
 
     img {
       height: 80px;
@@ -104,7 +117,7 @@ body {
     }
 
     input[type="checkbox"] + label{
-      background:url('../img/Dribbble-Icon-small.png') no-repeat;
+      background:url('../img/circle.png') no-repeat;
       height: 24px;
       width: 24px;
       display:inline-block;
@@ -113,6 +126,10 @@ body {
       top: 0;
       left: 0;
       z-index: 2;
+    }
+
+    input[type="checkbox"]:checked + label{
+      background:url('../img/Dribbble-Icon-small.png') no-repeat;
     }
   }
 
@@ -138,7 +155,7 @@ body {
     height: 50px;
     border-radius: 4px;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 16px;
   }
 
 }

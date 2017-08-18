@@ -89,7 +89,7 @@ body {
   bottom: 0;
   margin: auto;
   width: 500px;
-  height: 500px;
+  height: 640px;
   z-index: 1;
   background-color: #feffff;
   padding: 50px 40px 30px 40px;
@@ -107,75 +107,91 @@ body {
 .modal .title p {
   color: #A0A0A1;
 }
-/* line 44, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
+.modal .search-group {
+  margin: 50px 0;
+}
+/* line 46, ../sass/screen.scss */
 .modal .search-group .search-box {
-  border-bottom: solid 1px #f3f4f5;
   display: inline-block;
   width: 450px;
-}
-/* line 50, ../sass/screen.scss */
-.modal .search-group img {
-  height: 30px;
+  border: none;
+  border-bottom: solid 1px #E7E8E8;
+  margin: 0;
+  padding: 0;
+  height: 16px;
+  outline: none;
 }
 /* line 55, ../sass/screen.scss */
+.modal .search-group .search-box:focus {
+  height: 30px;
+}
+/* line 60, ../sass/screen.scss */
+.modal .search-group img {
+  height: 30px;
+  position: absolute;
+  padding-left: 16px;
+}
+/* line 67, ../sass/screen.scss */
 .modal .person {
   overflow: hidden;
+  margin-bottom: 20px;
 }
-/* line 58, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .modal .person img {
   height: 80px;
   float: left;
 }
-/* line 62, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .modal .person .introduction {
   text-align: left;
   display: inline-block;
   padding-top: 10px;
   padding-left: 24px;
 }
-/* line 68, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .modal .person .introduction p {
   line-height: 20px;
 }
-/* line 71, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .modal .person .introduction .name {
   color: #83B64E;
   font-weight: 600;
   font-size: 18px;
 }
-/* line 76, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .modal .person .introduction .skill {
   color: #CDCECF;
   font-size: 14px;
 }
-/* line 81, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .modal .person .introduction .contact p {
   display: inline;
 }
-/* line 84, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .modal .person .introduction .contact .location {
   color: #A7A8A9;
   padding-right: 16px;
 }
-/* line 88, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .modal .person .introduction .contact .web {
   color: #383839;
 }
-/* line 94, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .modal .person .checkbox_wrapper {
   float: right;
   margin-top: 30px;
   position: relative;
 }
-/* line 100, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .modal .person input[type="checkbox"] {
   opacity: 0;
   height: 24px;
   width: 24px;
 }
-/* line 106, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .modal .person input[type="checkbox"] + label {
-  background: url("../img/Dribbble-Icon-small.png") no-repeat;
+  background: url("../img/circle.png") no-repeat;
   height: 24px;
   width: 24px;
   display: inline-block;
@@ -185,7 +201,11 @@ body {
   left: 0;
   z-index: 2;
 }
-/* line 119, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
+.modal .person input[type="checkbox"]:checked + label {
+  background: url("../img/Dribbble-Icon-small.png") no-repeat;
+}
+/* line 136, ../sass/screen.scss */
 .modal input[type=text] {
   width: 100%;
   height: 40px;
@@ -196,12 +216,12 @@ body {
   font-size: 14px;
   color: #A0A0A1;
 }
-/* line 130, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .modal ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #A0A0A1;
 }
-/* line 134, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .modal input[type=button] {
   width: 100%;
   background-color: #E6508A;
@@ -209,5 +229,5 @@ body {
   height: 50px;
   border-radius: 4px;
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 16px;
 }
